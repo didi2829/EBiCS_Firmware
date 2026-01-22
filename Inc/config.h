@@ -82,27 +82,27 @@
 
 //--------------------------------------------------------------------
 //Speed settings
-#define WHEEL_CIRCUMFERENCE 2200
-#define GEAR_RATIO 80 //11 for BionX IGH3
+#define WHEEL_CIRCUMFERENCE 2200      //2200 für 28"
+#define GEAR_RATIO 72                 //11 for BionX IGH3     72 for Shengyi SX1/SX2
 #define SPEEDLIMIT 25
-#define PULSES_PER_REVOLUTION 3
+#define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE EXTERNAL
 #define SPEEDFILTER 1
 #define SPDSHFT 0
 
 //---------------------------------------------------------------------
 //power settings
-#define PH_CURRENT_MAX 1400
-#define BATTERYCURRENT_MAX 15000
-#define REVERSE 1 //1 for normal direction, -1 for reverse
-#define PUSHASSIST_CURRENT 300
-#define VOLTAGE_MIN 1320 //33V
+#define PH_CURRENT_MAX 1200        //conversion factor for ADC value is 38 in mA 1200 x 38 = 45600 mA
+#define BATTERYCURRENT_MAX 15000   //real value in mA
+#define REVERSE 1                 //1 for normal direction, -1 for reverse
+#define PUSHASSIST_CURRENT 300    //conversion factor for ADC value is 38 in mA 300 x 38 = 11400 mA
+#define VOLTAGE_MIN 1000         //conversion factor is 25 in mV  i.e. 1000 x 25 = 25000 mV
 
 //---------------------------------------------------------------------
 //torquesensor settings
-#define TS_COEF 1200
-#define TS_MODE
-#define TQONAD1
+#define TS_COEF 1200            //auch höhere Werte möglich, z.B. 2400
+//#define TS_MODE
+//#define TQONAD1
 
 //---------------------------------------------------------------------
 //Display settings
@@ -116,6 +116,6 @@
 //#define ADC_BRAKE
 
 //---------------------------------------------------------------------
-#define AUTODETECT 0
+#define AUTODETECT 1
 
 #endif /* CONFIG_H_ */
