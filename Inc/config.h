@@ -78,13 +78,13 @@
 //Throttle settings
 #define THROTTLE_OFFSET 920   //only default value, throttle offset is set at startup automatically
 #define THROTTLE_MAX 2850
-#define THROTTLE_OVERRIDE
+#define THROTTLE_OVERRIDE     //deactivate if it has to be street legal
 
 //--------------------------------------------------------------------
 //Speed settings
 #define WHEEL_CIRCUMFERENCE 2200      //2200 für 28"
 #define GEAR_RATIO 72                 //11 for BionX IGH3     72 for Shengyi SX1/SX2
-#define SPEEDLIMIT 25
+#define SPEEDLIMIT 99
 #define PULSES_PER_REVOLUTION 1
 #define SPEEDSOURCE EXTERNAL
 #define SPEEDFILTER 1
